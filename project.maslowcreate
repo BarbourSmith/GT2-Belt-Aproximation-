@@ -52,8 +52,21 @@
                     "x": 580,
                     "y": 177,
                     "uniqueID": 106760,
-                    "ioValues": [],
-                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1, Input2){\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(Input1, Input2)"
+                    "ioValues": [
+                        {
+                            "name": "D1",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "D2",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "L",
+                            "ioValue": 10
+                        }
+                    ],
+                    "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(D1, D2, L){\n  const beltLength = 2*L+1.57*(D1+D2)+((D1-D2)*(D1-D2))/(4*L);\n  console.log(\"Belt Length: \" + beltLength); //https://bepltd.com/pages/how-to-calculate-belt-length\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(D1, D2, L)"
                 },
                 {
                     "atomType": "Output",
@@ -63,7 +76,35 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "L",
+                    "ap2Primary": false,
+                    "ap1ID": 263162,
+                    "ap2ID": 106760
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "D1",
+                    "ap2Primary": false,
+                    "ap1ID": 146417,
+                    "ap2ID": 106760
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "D2",
+                    "ap2Primary": false,
+                    "ap1ID": 804958,
+                    "ap2ID": 106760
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 106760
+                }
+            ],
             "fileTypeVersion": 1
         },
         {
