@@ -46,7 +46,7 @@
                     "atomType": "Input",
                     "name": "Dist Between Centers",
                     "x": 0.013333333333333334,
-                    "y": 70,
+                    "y": 0.31800766283524906,
                     "uniqueID": 263162,
                     "ioValues": []
                 },
@@ -54,23 +54,15 @@
                     "atomType": "Input",
                     "name": "Sprocket One Size",
                     "x": 0.013333333333333334,
-                    "y": 143,
+                    "y": 0.5325670498084291,
                     "uniqueID": 146417,
-                    "ioValues": []
-                },
-                {
-                    "atomType": "Input",
-                    "name": "Sprocket 2 Size",
-                    "x": 0.013333333333333334,
-                    "y": 197,
-                    "uniqueID": 804958,
                     "ioValues": []
                 },
                 {
                     "atomType": "Code",
                     "name": "Code",
-                    "x": 580,
-                    "y": 177,
+                    "x": 0.5014641288433382,
+                    "y": 0.5555555555555556,
                     "uniqueID": 106760,
                     "ioValues": [
                         {
@@ -89,10 +81,18 @@
                     "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(D1, D2, L){\n  const beltLength = 2*L+1.57*(D1+D2)+((D1-D2)*(D1-D2))/(4*L);\n  console.log(\"Belt Length: \" + beltLength); //https://bepltd.com/pages/how-to-calculate-belt-length\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(D1, D2, L)"
                 },
                 {
+                    "atomType": "Input",
+                    "name": "Sprocket 2 Size",
+                    "x": 0.013333333333333334,
+                    "y": 0.7816091954022989,
+                    "uniqueID": 804958,
+                    "ioValues": []
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
-                    "x": 1316,
-                    "y": 163.5,
+                    "x": 0.9904831625183017,
+                    "y": 0.6015325670498084,
                     "ioValues": []
                 }
             ],
@@ -112,17 +112,17 @@
                     "ap2ID": 106760
                 },
                 {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 106760
+                },
+                {
                     "ap1Name": "number or geometry",
                     "ap2Name": "D2",
                     "ap2Primary": false,
                     "ap1ID": 804958,
                     "ap2ID": 106760
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 106760
                 }
             ],
             "fileTypeVersion": 1
