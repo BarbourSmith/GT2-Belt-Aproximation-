@@ -4,9 +4,3 @@
 
 ![](/project.svg)
 
-## GT2 Belt Aproximation 
-
-
-## Console Log Belt Size
-
-

@@ -1,10 +1,30 @@
 {
-    "molecules": [
+    "atomType": "Molecule",
+    "name": "GT2 Belt Aproximation ",
+    "x": 0,
+    "y": 0,
+    "uniqueID": 278239,
+    "ioValues": [
+        {
+            "name": "Dist Between Centers",
+            "ioValue": 40
+        },
+        {
+            "name": "Sprocket One Size",
+            "ioValue": 10
+        },
+        {
+            "name": "Sprocket 2 Size",
+            "ioValue": 40
+        }
+    ],
+    "topLevel": true,
+    "allAtoms": [
         {
             "atomType": "Molecule",
             "name": "Console Log Belt Size",
-            "x": 195,
-            "y": 276,
+            "x": 0.20644216691068812,
+            "y": 0.19540229885057472,
             "uniqueID": 206658,
             "ioValues": [
                 {
@@ -25,7 +45,7 @@
                 {
                     "atomType": "Input",
                     "name": "Dist Between Centers",
-                    "x": 30,
+                    "x": 0.013333333333333334,
                     "y": 70,
                     "uniqueID": 263162,
                     "ioValues": []
@@ -33,7 +53,7 @@
                 {
                     "atomType": "Input",
                     "name": "Sprocket One Size",
-                    "x": 30,
+                    "x": 0.013333333333333334,
                     "y": 143,
                     "uniqueID": 146417,
                     "ioValues": []
@@ -41,7 +61,7 @@
                 {
                     "atomType": "Input",
                     "name": "Sprocket 2 Size",
-                    "x": 30,
+                    "x": 0.013333333333333334,
                     "y": 197,
                     "uniqueID": 804958,
                     "ioValues": []
@@ -59,11 +79,11 @@
                         },
                         {
                             "name": "D2",
-                            "ioValue": 10
+                            "ioValue": 40
                         },
                         {
                             "name": "L",
-                            "ioValue": 10
+                            "ioValue": 40
                         }
                     ],
                     "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(D1, D2, L){\n  const beltLength = 2*L+1.57*(D1+D2)+((D1-D2)*(D1-D2))/(4*L);\n  console.log(\"Belt Length: \" + beltLength); //https://bepltd.com/pages/how-to-calculate-belt-length\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(D1, D2, L)"
@@ -108,441 +128,397 @@
             "fileTypeVersion": 1
         },
         {
-            "atomType": "Molecule",
-            "name": "GT2 Belt Aproximation ",
-            "x": 0,
-            "y": 0,
-            "uniqueID": 278239,
+            "atomType": "Input",
+            "name": "Dist Between Centers",
+            "x": 0.013333333333333334,
+            "y": 0.3754789272030651,
+            "uniqueID": 205227,
+            "ioValues": []
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.24816983894582723,
+            "y": 0.3065134099616858,
+            "uniqueID": 107997,
             "ioValues": [
                 {
-                    "name": "Dist Between Centers",
+                    "name": "xDist",
                     "ioValue": 40
                 },
                 {
-                    "name": "Sprocket One Size",
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.4480234260614934,
+            "y": 0.1724137931034483,
+            "uniqueID": 366981,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 40
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.1698389458272328,
+            "y": 0.5134099616858238,
+            "uniqueID": 834121,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.2913616398243046,
+            "y": 0.4942528735632184,
+            "uniqueID": 217937,
+            "ioValues": [
+                {
+                    "name": "S",
+                    "ioValue": 10
+                }
+            ],
+            "currentEquation": "S+2"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.40043923865300146,
+            "y": 0.47126436781609193,
+            "uniqueID": 122273,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 12
+                }
+            ]
+        },
+        {
+            "atomType": "Input",
+            "name": "Sprocket One Size",
+            "x": 0.013333333333333334,
+            "y": 0.685823754789272,
+            "uniqueID": 241162,
+            "ioValues": []
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.2137628111273792,
+            "y": 0.7049808429118775,
+            "uniqueID": 730136,
+            "ioValues": [
+                {
+                    "name": "S",
+                    "ioValue": 40
+                }
+            ],
+            "currentEquation": "S+2"
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.7071742313323572,
+            "y": 0.24904214559386972,
+            "uniqueID": 844707,
+            "ioValues": []
+        },
+        {
+            "atomType": "ShrinkWrap",
+            "name": "Shrink Wrap",
+            "x": 0.5219619326500733,
+            "y": 0.5440613026819924,
+            "uniqueID": 450516,
+            "ioValues": [
+                {
+                    "name": "3D shape 3",
+                    "ioValue": ""
+                },
+                {
+                    "name": "3D shape 3",
                     "ioValue": 10
                 },
                 {
-                    "name": "Sprocket 2 Size",
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ],
+            "closedSelection": 0
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.3440702781844802,
+            "y": 0.6934865900383141,
+            "uniqueID": 750882,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 42
+                }
+            ]
+        },
+        {
+            "atomType": "Input",
+            "name": "Sprocket 2 Size",
+            "x": 0.013333333333333334,
+            "y": 0.846743295019157,
+            "uniqueID": 272081,
+            "ioValues": []
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.2027818448023426,
+            "y": 0.896551724137931,
+            "uniqueID": 316136,
+            "ioValues": [
+                {
+                    "name": "diameter",
                     "ioValue": 40
                 }
-            ],
-            "topLevel": true,
-            "allAtoms": [
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.8667642752562226,
+            "y": 0.31800766283524906,
+            "uniqueID": 240940,
+            "ioValues": [
                 {
-                    "atomType": "Input",
-                    "name": "Dist Between Centers",
-                    "x": 30,
-                    "y": 70,
-                    "uniqueID": 205227,
-                    "ioValues": []
+                    "name": "height",
+                    "ioValue": 6
+                }
+            ]
+        },
+        {
+            "atomType": "ShrinkWrap",
+            "name": "Shrink Wrap",
+            "x": 0.4509516837481698,
+            "y": 0.8697318007662835,
+            "uniqueID": 793972,
+            "ioValues": [
+                {
+                    "name": "3D shape 4",
+                    "ioValue": ""
                 },
                 {
-                    "atomType": "Input",
-                    "name": "Sprocket One Size",
-                    "x": 30,
-                    "y": 143,
-                    "uniqueID": 241162,
-                    "ioValues": []
+                    "name": "3D shape 4",
+                    "ioValue": 10
                 },
                 {
-                    "atomType": "Input",
-                    "name": "Sprocket 2 Size",
-                    "x": 30,
-                    "y": 197,
-                    "uniqueID": 272081,
-                    "ioValues": []
+                    "name": "3D shape 1",
+                    "ioValue": 10
                 },
                 {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 284,
-                    "y": 86,
-                    "uniqueID": 834121,
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 10
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Molecule",
-                    "name": "Console Log Belt Size",
-                    "x": 195,
-                    "y": 276,
-                    "uniqueID": 206658,
-                    "ioValues": [
-                        {
-                            "name": "Dist Between Centers",
-                            "ioValue": 40
-                        },
-                        {
-                            "name": "Sprocket One Size",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "Sprocket 2 Size",
-                            "ioValue": 40
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Equation",
-                    "name": "Equation",
-                    "x": 289,
-                    "y": 215,
-                    "uniqueID": 730136,
-                    "ioValues": [
-                        {
-                            "name": "S",
-                            "ioValue": 40
-                        }
-                    ],
-                    "currentEquation": "S+2"
-                },
-                {
-                    "atomType": "Equation",
-                    "name": "Equation",
-                    "x": 335,
-                    "y": 169,
-                    "uniqueID": 217937,
-                    "ioValues": [
-                        {
-                            "name": "S",
-                            "ioValue": 10
-                        }
-                    ],
-                    "currentEquation": "S+2"
-                },
-                {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 477,
-                    "y": 101,
-                    "uniqueID": 316136,
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 40
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 455,
-                    "y": 184,
-                    "uniqueID": 122273,
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 12
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Translate",
-                    "name": "Translate",
-                    "x": 561,
-                    "y": 38,
-                    "uniqueID": 107997,
-                    "ioValues": [
-                        {
-                            "name": "xDist",
-                            "ioValue": 40
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 0
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 544,
-                    "y": 246,
-                    "uniqueID": 750882,
-                    "ioValues": [
-                        {
-                            "name": "diameter",
-                            "ioValue": 42
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Translate",
-                    "name": "Translate",
-                    "x": 586,
-                    "y": 175,
-                    "uniqueID": 366981,
-                    "ioValues": [
-                        {
-                            "name": "xDist",
-                            "ioValue": 40
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 0
-                        }
-                    ]
-                },
-                {
-                    "atomType": "ShrinkWrap",
-                    "name": "Shrink Wrap",
-                    "x": 717,
-                    "y": 84,
-                    "uniqueID": 793972,
-                    "ioValues": [
-                        {
-                            "name": "3D shape 4",
-                            "ioValue": ""
-                        },
-                        {
-                            "name": "3D shape 4",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "3D shape 1",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "3D shape 3",
-                            "ioValue": 10
-                        }
-                    ],
-                    "closedSelection": 0
-                },
-                {
-                    "atomType": "ShrinkWrap",
-                    "name": "Shrink Wrap",
-                    "x": 701,
-                    "y": 216,
-                    "uniqueID": 450516,
-                    "ioValues": [
-                        {
-                            "name": "3D shape 3",
-                            "ioValue": ""
-                        },
-                        {
-                            "name": "3D shape 3",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "3D shape 1",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "3D shape 2",
-                            "ioValue": 10
-                        }
-                    ],
-                    "closedSelection": 0
-                },
-                {
-                    "atomType": "Difference",
-                    "name": "Difference",
-                    "x": 871,
-                    "y": 63,
-                    "uniqueID": 844707,
-                    "ioValues": []
-                },
-                {
-                    "atomType": "Color",
-                    "name": "Color",
-                    "x": 1003,
-                    "y": 158,
-                    "uniqueID": 641332,
-                    "ioValues": [],
-                    "selectedColorIndex": "11"
-                },
-                {
-                    "atomType": "Extrude",
-                    "name": "Extrude",
-                    "x": 1064,
-                    "y": 91,
-                    "uniqueID": 240940,
-                    "ioValues": [
-                        {
-                            "name": "height",
-                            "ioValue": 6
-                        }
-                    ]
-                },
-                {
-                    "atomType": "Output",
-                    "name": "Output",
-                    "x": 1316,
-                    "y": 163.5,
-                    "ioValues": []
+                    "name": "3D shape 3",
+                    "ioValue": 10
                 }
             ],
-            "allConnectors": [
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "xDist",
-                    "ap2Primary": false,
-                    "ap1ID": 205227,
-                    "ap2ID": 107997
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "xDist",
-                    "ap2Primary": false,
-                    "ap1ID": 205227,
-                    "ap2ID": 366981
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "Dist Between Centers",
-                    "ap2Primary": false,
-                    "ap1ID": 205227,
-                    "ap2ID": 206658
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "diameter",
-                    "ap2Primary": false,
-                    "ap1ID": 241162,
-                    "ap2ID": 834121
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "S",
-                    "ap2Primary": false,
-                    "ap1ID": 241162,
-                    "ap2ID": 217937
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "Sprocket One Size",
-                    "ap2Primary": false,
-                    "ap1ID": 241162,
-                    "ap2ID": 206658
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "diameter",
-                    "ap2Primary": false,
-                    "ap1ID": 272081,
-                    "ap2ID": 316136
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "S",
-                    "ap2Primary": false,
-                    "ap1ID": 272081,
-                    "ap2ID": 730136
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "Sprocket 2 Size",
-                    "ap2Primary": false,
-                    "ap1ID": 272081,
-                    "ap2ID": 206658
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 834121,
-                    "ap2ID": 107997
-                },
-                {
-                    "ap1Name": "result",
-                    "ap2Name": "diameter",
-                    "ap2Primary": false,
-                    "ap1ID": 730136,
-                    "ap2ID": 750882
-                },
-                {
-                    "ap1Name": "result",
-                    "ap2Name": "diameter",
-                    "ap2Primary": false,
-                    "ap1ID": 217937,
-                    "ap2ID": 122273
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "3D shape 1",
-                    "ap2Primary": false,
-                    "ap1ID": 316136,
-                    "ap2ID": 793972
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 122273,
-                    "ap2ID": 366981
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "3D shape 3",
-                    "ap2Primary": false,
-                    "ap1ID": 107997,
-                    "ap2ID": 793972
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "3D shape 1",
-                    "ap2Primary": false,
-                    "ap1ID": 750882,
-                    "ap2ID": 450516
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "3D shape 2",
-                    "ap2Primary": false,
-                    "ap1ID": 366981,
-                    "ap2ID": 450516
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry2",
-                    "ap2Primary": false,
-                    "ap1ID": 793972,
-                    "ap2ID": 844707
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry1",
-                    "ap2Primary": false,
-                    "ap1ID": 450516,
-                    "ap2ID": 844707
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 844707,
-                    "ap2ID": 641332
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 641332,
-                    "ap2ID": 240940
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 240940
-                }
-            ],
-            "fileTypeVersion": 1
+            "closedSelection": 0
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.7628111273792094,
+            "y": 0.6704980842911877,
+            "uniqueID": 641332,
+            "ioValues": [],
+            "selectedColorIndex": "11"
+        },
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.9912152269399708,
+            "y": 0.6513409961685823,
+            "ioValues": []
         }
     ],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 205227,
+            "ap2ID": 107997
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": 205227,
+            "ap2ID": 366981
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Dist Between Centers",
+            "ap2Primary": false,
+            "ap1ID": 205227,
+            "ap2ID": 206658
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 3",
+            "ap2Primary": false,
+            "ap1ID": 107997,
+            "ap2ID": 793972
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 366981,
+            "ap2ID": 450516
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 834121,
+            "ap2ID": 107997
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 217937,
+            "ap2ID": 122273
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 122273,
+            "ap2ID": 366981
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 241162,
+            "ap2ID": 834121
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "S",
+            "ap2Primary": false,
+            "ap1ID": 241162,
+            "ap2ID": 217937
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Sprocket One Size",
+            "ap2Primary": false,
+            "ap1ID": 241162,
+            "ap2ID": 206658
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 730136,
+            "ap2ID": 750882
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 844707,
+            "ap2ID": 641332
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 450516,
+            "ap2ID": 844707
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 750882,
+            "ap2ID": 450516
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": 272081,
+            "ap2ID": 316136
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "S",
+            "ap2Primary": false,
+            "ap1ID": 272081,
+            "ap2ID": 730136
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Sprocket 2 Size",
+            "ap2Primary": false,
+            "ap1ID": 272081,
+            "ap2ID": 206658
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 316136,
+            "ap2ID": 793972
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 240940
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 793972,
+            "ap2ID": 844707
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 641332,
+            "ap2ID": 240940
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
     "circleSegmentSize": 2
 }
