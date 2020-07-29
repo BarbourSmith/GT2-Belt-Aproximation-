@@ -1,6 +1,6 @@
 {
     "atomType": "Molecule",
-    "name": "GT2 Belt Aproximation ",
+    "name": "GT2 Belt Approximation",
     "x": 0,
     "y": 0,
     "uniqueID": 278239,
@@ -15,7 +15,7 @@
         },
         {
             "name": "Sprocket 2 Size",
-            "ioValue": 40
+            "ioValue": 10
         }
     ],
     "topLevel": true,
@@ -37,7 +37,7 @@
                 },
                 {
                     "name": "Sprocket 2 Size",
-                    "ioValue": 40
+                    "ioValue": 10
                 }
             ],
             "topLevel": false,
@@ -71,7 +71,7 @@
                         },
                         {
                             "name": "D2",
-                            "ioValue": 40
+                            "ioValue": 10
                         },
                         {
                             "name": "L",
@@ -218,40 +218,10 @@
             ]
         },
         {
-            "atomType": "Input",
-            "name": "Sprocket One Size",
-            "x": 0.013333333333333334,
-            "y": 0.685823754789272,
-            "uniqueID": 241162,
-            "ioValues": []
-        },
-        {
-            "atomType": "Equation",
-            "name": "Equation",
-            "x": 0.2137628111273792,
-            "y": 0.7049808429118775,
-            "uniqueID": 730136,
-            "ioValues": [
-                {
-                    "name": "S",
-                    "ioValue": 40
-                }
-            ],
-            "currentEquation": "S+2"
-        },
-        {
-            "atomType": "Difference",
-            "name": "Difference",
-            "x": 0.7071742313323572,
-            "y": 0.24904214559386972,
-            "uniqueID": 844707,
-            "ioValues": []
-        },
-        {
             "atomType": "ShrinkWrap",
             "name": "Shrink Wrap",
-            "x": 0.5219619326500733,
-            "y": 0.5440613026819924,
+            "x": 0.5094152626362736,
+            "y": 0.4444444444444444,
             "uniqueID": 450516,
             "ioValues": [
                 {
@@ -274,6 +244,36 @@
             "closedSelection": 0
         },
         {
+            "atomType": "Input",
+            "name": "Sprocket One Size",
+            "x": 0.013333333333333334,
+            "y": 0.685823754789272,
+            "uniqueID": 241162,
+            "ioValues": []
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.2137628111273792,
+            "y": 0.7049808429118775,
+            "uniqueID": 730136,
+            "ioValues": [
+                {
+                    "name": "S",
+                    "ioValue": 10
+                }
+            ],
+            "currentEquation": "S+2"
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.7071742313323572,
+            "y": 0.24904214559386972,
+            "uniqueID": 844707,
+            "ioValues": []
+        },
+        {
             "atomType": "Circle",
             "name": "Circle",
             "x": 0.3440702781844802,
@@ -282,7 +282,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 42
+                    "ioValue": 12
                 }
             ]
         },
@@ -303,7 +303,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 40
+                    "ioValue": 10
                 }
             ]
         },
@@ -421,6 +421,13 @@
             "ap2ID": 366981
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 450516,
+            "ap2ID": 844707
+        },
+        {
             "ap1Name": "number or geometry",
             "ap2Name": "diameter",
             "ap2Primary": false,
@@ -454,13 +461,6 @@
             "ap2Primary": true,
             "ap1ID": 844707,
             "ap2ID": 641332
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "geometry1",
-            "ap2Primary": false,
-            "ap1ID": 450516,
-            "ap2ID": 844707
         },
         {
             "ap1Name": "geometry",
