@@ -11,11 +11,15 @@
         },
         {
             "name": "Sprocket One Size",
-            "ioValue": 10
+            "ioValue": 10.1
         },
         {
             "name": "Sprocket 2 Size",
             "ioValue": 10
+        },
+        {
+            "name": "Offset",
+            "ioValue": 7
         }
     ],
     "topLevel": true,
@@ -33,7 +37,7 @@
                 },
                 {
                     "name": "Sprocket One Size",
-                    "ioValue": 10
+                    "ioValue": 10.1
                 },
                 {
                     "name": "Sprocket 2 Size",
@@ -67,7 +71,7 @@
                     "ioValues": [
                         {
                             "name": "D1",
-                            "ioValue": 10
+                            "ioValue": 10.1
                         },
                         {
                             "name": "D2",
@@ -138,8 +142,8 @@
         {
             "atomType": "Translate",
             "name": "Translate",
-            "x": 0.24816983894582723,
-            "y": 0.3065134099616858,
+            "x": 0.26281112737920936,
+            "y": 0.3754789272030651,
             "uniqueID": 107997,
             "ioValues": [
                 {
@@ -148,7 +152,7 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 7
                 },
                 {
                     "name": "zDist",
@@ -169,13 +173,21 @@
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 7
                 },
                 {
                     "name": "zDist",
                     "ioValue": 0
                 }
             ]
+        },
+        {
+            "atomType": "Input",
+            "name": "Offset",
+            "x": 0.013333333333333334,
+            "y": 0.5402298850574713,
+            "uniqueID": 695281,
+            "ioValues": []
         },
         {
             "atomType": "Circle",
@@ -186,7 +198,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 10.1
                 }
             ]
         },
@@ -199,7 +211,7 @@
             "ioValues": [
                 {
                     "name": "S",
-                    "ioValue": 10
+                    "ioValue": 10.1
                 }
             ],
             "currentEquation": "S+2"
@@ -213,7 +225,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 12
+                    "ioValue": 12.1
                 }
             ]
         },
@@ -398,6 +410,20 @@
             "ap2Primary": false,
             "ap1ID": 366981,
             "ap2ID": 450516
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 695281,
+            "ap2ID": 107997
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": 695281,
+            "ap2ID": 366981
         },
         {
             "ap1Name": "geometry",
