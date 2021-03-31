@@ -7,7 +7,11 @@
     "ioValues": [
         {
             "name": "Dist Between Centers",
-            "ioValue": 40
+            "ioValue": 70
+        },
+        {
+            "name": "Offset",
+            "ioValue": 7
         },
         {
             "name": "Sprocket One Size",
@@ -15,11 +19,7 @@
         },
         {
             "name": "Sprocket 2 Size",
-            "ioValue": 10
-        },
-        {
-            "name": "Offset",
-            "ioValue": 7
+            "ioValue": 50
         }
     ],
     "topLevel": true,
@@ -33,7 +33,7 @@
             "ioValues": [
                 {
                     "name": "Dist Between Centers",
-                    "ioValue": 40
+                    "ioValue": 70
                 },
                 {
                     "name": "Sprocket One Size",
@@ -41,7 +41,7 @@
                 },
                 {
                     "name": "Sprocket 2 Size",
-                    "ioValue": 10
+                    "ioValue": 50
                 }
             ],
             "topLevel": false,
@@ -75,11 +75,11 @@
                         },
                         {
                             "name": "D2",
-                            "ioValue": 10
+                            "ioValue": 50
                         },
                         {
                             "name": "L",
-                            "ioValue": 40
+                            "ioValue": 70
                         }
                     ],
                     "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(D1, D2, L){\n  const beltLength = 2*L+1.57*(D1+D2)+((D1-D2)*(D1-D2))/(4*L);\n  console.log(\"Belt Length: \" + beltLength); //https://bepltd.com/pages/how-to-calculate-belt-length\n  return Sphere(40)        //return must be geometry;\n}\n\nreturn main(D1, D2, L)"
@@ -97,6 +97,7 @@
                     "name": "Output",
                     "x": 0.9904831625183017,
                     "y": 0.6015325670498084,
+                    "uniqueID": 232282,
                     "ioValues": []
                 }
             ],
@@ -114,12 +115,6 @@
                     "ap2Primary": false,
                     "ap1ID": 146417,
                     "ap2ID": 106760
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 106760
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -147,8 +142,12 @@
             "uniqueID": 107997,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/278239/834121Circle"
+                },
+                {
                     "name": "xDist",
-                    "ioValue": 40
+                    "ioValue": 70
                 },
                 {
                     "name": "yDist",
@@ -168,8 +167,12 @@
             "uniqueID": 366981,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/278239/122273Circle"
+                },
+                {
                     "name": "xDist",
-                    "ioValue": 40
+                    "ioValue": 70
                 },
                 {
                     "name": "yDist",
@@ -241,6 +244,14 @@
                     "ioValue": ""
                 },
                 {
+                    "name": "3D shape 1",
+                    "ioValue": "atoms/278239/750882Circle"
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": "atoms/278239/366981Translate"
+                },
+                {
                     "name": "3D shape 3",
                     "ioValue": 10
                 },
@@ -272,7 +283,7 @@
             "ioValues": [
                 {
                     "name": "S",
-                    "ioValue": 10
+                    "ioValue": 50
                 }
             ],
             "currentEquation": "S+2"
@@ -283,7 +294,16 @@
             "x": 0.7071742313323572,
             "y": 0.24904214559386972,
             "uniqueID": 844707,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "atoms/278239/793972ShrinkWrap"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "atoms/278239/450516ShrinkWrap"
+                }
+            ]
         },
         {
             "atomType": "Circle",
@@ -294,7 +314,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 12
+                    "ioValue": 52
                 }
             ]
         },
@@ -315,7 +335,7 @@
             "ioValues": [
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 50
                 }
             ]
         },
@@ -326,6 +346,10 @@
             "y": 0.31800766283524906,
             "uniqueID": 240940,
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/278239/641332Color"
+                },
                 {
                     "name": "height",
                     "ioValue": 6
@@ -342,6 +366,14 @@
                 {
                     "name": "3D shape 4",
                     "ioValue": ""
+                },
+                {
+                    "name": "3D shape 1",
+                    "ioValue": "atoms/278239/316136Circle"
+                },
+                {
+                    "name": "3D shape 3",
+                    "ioValue": "atoms/278239/107997Translate"
                 },
                 {
                     "name": "3D shape 4",
@@ -364,7 +396,12 @@
             "x": 0.7628111273792094,
             "y": 0.6704980842911877,
             "uniqueID": 641332,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/278239/844707Difference"
+                }
+            ],
             "selectedColorIndex": "11"
         },
         {
@@ -372,7 +409,13 @@
             "name": "Output",
             "x": 0.9912152269399708,
             "y": 0.6513409961685823,
-            "ioValues": []
+            "uniqueID": 308934,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/278239/240940Extrude"
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -527,7 +570,8 @@
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 240940
+            "ap1ID": 240940,
+            "ap2ID": 308934
         },
         {
             "ap1Name": "geometry",
